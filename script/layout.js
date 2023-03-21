@@ -9,7 +9,7 @@ x_btn.addEventListener('click',()=>{
   warp.classList.remove('wrap_pos');
 });
 
-let s_gnb = document.querySelectorAll('.s_gnb > li > a');
+let s_gnb = document.querySelectorAll('.s_gnb > li:nth-of-type(3) > a');
 let sub = document.querySelectorAll('.s_gnb > li > .sub');
 
 for(let i=0;i<s_gnb.length;i++){
