@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+:root{
+  --t-color: #333;
+  --t-color01: #fff;
+  --t-color02: #000;
+  --t-color03: #b2b2b2;
+  --m-color: #B01F00;
+  --s-color01: #8B705E;
+  --s-color02: #262626;
+  --s-color03: #B8B8B8;
+  --s-color04: #C8883C;
+}

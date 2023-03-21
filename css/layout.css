@@ -1,0 +1,263 @@
+@charset "utf-8";
+/* 헤더영역 서식 */
+a{
+  color: #333;
+  text-decoration: none;
+}
+#wrap{
+  width: 100%;
+  position: relative;
+  left: 0;
+  transition: 0.5s;
+}
+.wrap_pos{left: 300px !important;}
+/* #wrap::after{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  position: absolute;
+} */
+header{
+  width: 100%;
+  height: 260px;
+}
+.h_top{
+  width: 1400px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h_top h1{
+  order: 2;
+  text-align: center;
+}
+.h_my{
+  order: 1;
+  position: relative;
+  padding-right: 140px;
+}
+.h_cart{
+  order: 3;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.h_cart .h_count{
+  position: absolute;
+  top: 15px;
+  left: -5px;
+  padding: 3px 6px;
+  background: var(--s-color01);
+  color: var(--t-color01);
+  border-radius: 50%;
+}
+.h_top .fas{
+  font-size: 22px;
+  margin-right: 5px;
+}
+#menu{
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  background: var(--s-color01);
+  border-radius: 50%;
+  line-height: 8px;
+  cursor: pointer;
+}
+#menu > span{
+  display: inline-block;
+  background: var(--t-color01);
+  width: 20px;
+  height: 3px;
+  border-radius: 10px;
+  transform: translate(10px, 10px);
+}
+.h_bottom{
+  width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.h_sns{
+  display: flex;
+  gap: 20px;
+  position: relative;
+  font-size: 16px;
+}
+.h_tip{
+  position: absolute;
+  font-size: 12px;
+  font-weight: bold;
+  top: -35px;
+  left: 0;
+  padding: 6px 10px 15px 10px;
+  background-image: url(../image/tip.jpg);
+  background-size: cover;
+  color: var(--t-color01);
+}
+.gnb{
+  position: relative;
+  display: flex;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform : uppercase;
+  color: var(--t-color01);
+}
+.gnb .h_tip{
+  top: -35px;
+  left: 213px;
+}
+.h_bottom p{
+  width: 150px;
+  text-align: center;
+  line-height: 32px;
+  background: var(--m-color);
+  color: var(--t-color01);
+}
+.side{
+  padding: 80px 0;
+  width: 300px;
+  height: 100%;
+  background: var(--s-color02);
+  position: absolute;
+  top: 0;
+  left: -300px;
+  box-sizing: border-box;
+}
+.x_box{
+  text-align: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 52px;
+  background: var(--s-color01);
+  cursor: pointer;
+}
+.x_box .fa-xmark{
+  font-size: 32px;
+  color: var(--t-color01);
+}
+.x_box span:first-child{
+  transform: rotate(45deg);
+}
+.x_box span:last-child{
+  transform: rotate(-45deg);
+}
+.side h2{
+  color: var(--t-color01);
+  font-size: 24px;
+  text-indent: 20px;
+}
+.s_gnb{
+  padding: 0 30px;
+}
+.s_gnb > li > a{
+  color: var(--t-color01);
+  font-size: 16px;
+  line-height: 50px;
+}
+.sub{
+  display: none;
+}
+.act{
+
+}
+.sub >li >a{
+  color: var(--t-color01);
+}
+
+/* 푸터영역 서식*/
+footer{
+  width: 100%;
+  height:300px;
+  border-top: 1px solid #E5E5E5;
+}
+footer > .f_inner{
+  width: 1400px;
+  height: 300px;
+  border-bottom: 1px solid #DDD;
+  margin: 0 auto;
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+footer >.f_inner > .f_address{
+  width: 300px;
+  position: relative;
+}
+footer> .f_inner > .f_address >h2 img{
+  width: 60%;
+}
+.f_address > address > p:first-child{
+  font-style: normal;
+  color: #B2B2B2;
+  margin: 30px 0px;
+}
+.f_address > address > p:first-child >.number{
+  font-size: 22px;
+  color: #333;
+}
+.f_address > address > p:last-child{
+  font-style: normal;
+  color: #B2B2B2;
+}
+
+footer >.f_inner > .f_menu{
+  width: 200px;
+  font-weight: bolder;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.f_menu li a{
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 42px;
+}
+
+footer >.f_inner > .f_form{
+  width: 400px;
+  height: 160px;
+}
+.f_form > h3{
+  font-size: 18px;
+  padding-top: 6px;
+}
+.f_form > .f_sub{
+  display: flex;
+  margin: 30px 0px;
+  height: 50px;
+}
+
+#f_email{
+  width: 300px;
+  background: #F0EDED;
+  border: none;
+  font-size: 16px;
+  font-style: italic;
+  text-indent: 10px;
+}
+#f_email:focus{
+  outline-style: none;
+}
+#f_submit{
+  width: 100px;
+  background: #262626;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+

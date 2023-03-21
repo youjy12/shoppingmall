@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- css초기화 -->
+  <link href="./css/reset.css" rel="stylesheet" type="text/css">
+  <!--기본서식, 공통서식-->
+  <link href="./css/base.css" rel="stylesheet" type="text/css">
+  <!--레이아웃서식-->
+  <link href="./css/layout.css" rel="stylesheet" type="text/css">
+  <!--콘텐츠 영역서식-->
+  <link href="./css/main.css" rel="stylesheet" type="text/css">
+  <!-- 아이콘 폰트 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <!-- 제이쿼리 라이브러리 -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- 공통스크립트 -->
+  <script src="./script/layout.js" defer></script>
+
+</head>
+<body>
+  <div id="wrap">
+    <!-- 헤더영역 -->
+    <header>
+      <div class="h_top">
+        <h1><a href="" title="위로 바로가기"><img src="./image/logo_black.png" alt="상단 로고"></a></h1>
+        <div class="h_my">
+          <a href="#" title="로그인"><i class="fas fa-user"></i>LOGIN</a>
+          <a href="#" title="회원가입"></i>JOIN</a>
+        </div>
+        <div class="h_cart">
+          <a href="#" title="최근본상품"><span class="h_count">2</span><i class="fa-solid fa-bag-shopping"></i>최근 본 상품</a>
+          <a href="#" title="장바구니"><span class="h_count">2</span><i class="fas fa-shopping-cart"></i>장바구니</a>
+          <div id="menu">
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+            <span>&nbsp;</span>
+          </div>
+        </div>
+      </div> <!-- 헤더탑 -->
+
+      <div class="h_bottom">
+        <ul class="h_sns">
+          <li><a href="#" title="인스타그램"><span class="h_tip">SHARE</span><i class="fab fab fa-instagram"></i></a></li>
+          <li><a href="#" title="페이스북"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#" title="유튜브"><i class="fab fa-youtube"></i></a></li>
+        </ul>
+
+        <nav>
+          <ul class="gnb">
+            <li><a href="#" title="">event</a></li>
+            <li><a href="#" title="">new arrivals</a></li>
+            <li><a href="#" title=""><span class="h_tip">HOT</span>best 20</a></li>
+            <li><a href="#" title="">men</a></li>
+            <li><a href="#" title="">women</a></li>
+            <li><a href="#" title="">g-motion</a></li>
+            <li><a href="#" title="">애견의류</a></li>
+            <li><a href="#" title="">last chance</a></li>
+          </ul>
+        </nav>
+        <p>오늘도착 배송</p>
+      </div> <!-- 헤더바텀 -->
+
+      <nav class="side">
+        <div class="x_box">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <h2>카테고리</h2>
+        <ul class="s_gnb">
+          <li>
+            <a href="#" title="메뉴">MENU</a>
+            <ul class="sub">
+              <li><a href="#" title="신상품">NEW ARRIVALS</a></li>
+              <li><a href="#" title="베스트 상품">BEST 20</a></li>
+              <li><a href="#" title="남성의류">MEN</a></li>
+              <li><a href="#" title="여성의류">WOMEN</a></li>
+              <li><a href="#" title="지모션">G-MOTION</a></li>
+              <li><a href="홈&언더웨어" title="">홈&언더웨어</a></li>
+              <li><a href="#" title="애견의류">애견의류</a></li>
+              <li><a href="#" title="마지막상품">LAST CHANCE</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" title="EVENT">EVENT</a>
+            <ul class="sub">
+              <li><a href="#" title="로맨틱 블로썸">로맨틱 블로썸</a></li>
+              <li><a href="#" title="당신이 찾던 완벽한 팬츠">당신이 찾던 완벽한 팬츠</a></li>
+              <li><a href="#" title="티셔츠 1+1 EVENT">티셔츠 1+1 EVENT</a></li>
+              <li><a href="#" title="1일 1종 릴레이특가">1일 1종 릴레이특가</a></li>
+              <li><a href="#" title="진행중인 이벤트">진행중인 이벤트</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#" title="용품">용품</a>
+            <ul class="sub">
+              <li><a href="#" title="">배변용품</a></li>
+              <li><a href="#" title="">위생용품</a></li>
+              <li><a href="#" title="">칫솔/치약</a></li>
+              <li><a href="#" title="">미용/관리</a></li>
+              <li><a href="#" title="">장난감</a></li>
+              <li><a href="#" title="">훈련용품</a></li>
+              <li><a href="#" title="">산책용품</a></li>
+              <li><a href="#" title="">하우스/방석</a></li>
+            </ul>
+          </li>
+          <li><a href="#" title="여행">여행</a></li>
+        </ul>
+      </nav> <!-- 사이드 메뉴 -->
+    </header>
+    <!-- 메인영역 시작 -->
+    <main>
+      <section id="t_menu">
+        <article>
+          <ul class="card">
+            <li>
+              <a href="#" title="지오다노 주니어 바로가기">
+                <img src="./image/logo_junior.png" alt="지오다노주니어 로고">
+              </a>
+            </li>
+            <li>
+              <a href="#" title="컨셉츠원 바로가기">
+                <img src="./image/logo_concept1.png" alt="컨셉츠원 로고">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <h3>지금 로그인 시, 최대 20% 프로모션 쿠폰 자동발급!</h3>
+                <p>로그인 하러 가기 > </p>
+              </a>
+            </li>
+          </ul>
+          <ul class="slide">
+            <li>
+              <a href="#" title="배너">
+                <img src="./image/banner01.jpg" alt="배너1">
+              </a>
+            </li>
+            <li>
+              <a href="#" title="배너">
+                <img src="./image/banner02.jpg" alt="배너2">
+              </a>
+            </li>
+            <li>
+              <a href="#" title="배너">
+                <img src="./image/banner03.jpg" alt="배너3">
+              </a>
+            </li>
+          </ul>
+        </article>
+        <article>
+          <ul class="banner">
+            <li>
+              <a href="#" title="">
+                <div>
+                  <p>ON ACCESORIES</p>
+                  <h3>MEN</h3>
+                  <span>SHOP NOW</span>
+                </div>
+                <img src="./image/man.jpg" alt="남성">
+              </a>
+            </li>
+            <li>
+              <a href="#" title="">
+                <div>
+                  <p>in Bags excepting the new collection</p>
+                  <h3>WOMEN</h3>
+                  <span>SHOP NOW</span>
+                </div>
+                <img src="./image/woman.jpg" alt="여성">
+              </a>
+            </li>
+          </ul>
+        </article>
+
+      </section>
+
+      <section id="new">
+        <h3>NEW ARRIVALS</h3>
+        <nav>
+          <ul class="category">
+            <li>
+              <a href="#none" title="전체 상품">ALL</a>
+            </li>
+            <li>
+              <a href="#none" title="남성의류">MAN</a>
+            </li>
+            <li>
+              <a href="#none" title="여성의류">WOMAN</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="sale">
+          <li>
+            <a href="#" title="상품1">
+              <img src="./image/new01.jpg" alt="상품1">
+              <p>71,800원</p>
+              <h3>NEW 한소희 크롭 데님 자켓</h3>
+            </a>
+            <a href="#">ADD TO CART</a>
+          </li>
+          <li>
+            <a href="#" title="상품1">
+              <img src="./image/new02.jpg" alt="상품1">
+              <p>53,800원</p>
+              <h3>NEW 차은우 오버사이즈 옥스포드 셔츠</h3>
+            </a>
+            <a href="#">ADD TO CART</a>
+          </li>          
+          <li>
+            <a href="#" title="상품1">
+              <img src="./image/new03.jpg" alt="상품1">
+              <p>17,800원</p>
+              <h3>NEW 한소희 프린트 티셔츠</h3>
+            </a>
+            <a href="#">ADD TO CART</a>
+          </li>          
+          <li>
+            <a href="#" title="상품1">
+              <img src="./image/new04.jpg" alt="상품1">
+              <p>80,800원</p>
+              <h3>NEW 차은우 코튼 목넥 하프집업 스웨터</h3>
+            </a>
+            <a href="#">ADD TO CART</a>
+          </li>          
+          <li>
+            <a href="#" title="상품1">
+              <img src="./image/new05.jpg" alt="상품1">
+              <p>44,800원</p>
+              <h3>NEW 한소희 슬릿 립 가디건 </h3>
+            </a>
+            <a href="#">ADD TO CART</a>
+          </li>          
+          <li>
+            <a href="#" title="상품1">
+              <img src="./image/new06.jpg" alt="상품1">
+              <p>69,800원</p>
+              <h3>NEW 차은우 하프밀란 루즈핏 크루넥 스웨터</h3>
+            </a>
+            <a href="#">ADD TO CART</a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="event">
+        <div class="e_txt">
+          <h2><span class="e_tip">HOT</span>NEW 한소희 초경량 어니언 퀼팅 하프 자켓</h2>
+          <p>APP 쿠폰 적용가 47840원</p>
+          <p><span class="p_sale">99,800원 </span> 59,800원</p>
+          <a href="#">SHOP NOW</a>
+        </div>
+        <div class="e_img">
+          <img src="./image/event01.jpg" alt="이벤트사진1">
+        </div>
+      </section>
+    </main>
+    <!-- 푸터영역 시작 -->
+    <footer>
+      <a href="#" title="위로 바로가기" class="t_btn">
+        <img src="./images/top_up.png" alt="위로 바로가기">
+      </a>
+      <div class="f_inner">
+        <div class="f_address">
+          <h2><a href="index.html" title="메인페이지로 바로가기"></a><img src="./image/logo_black.png" alt="하단로고"></h2>
+          <address>
+            <p>고객만족센터 <span class="number">000-0000-0000</span></p>
+            <p>Copyright &copy; GIORDANO Corp. All Rights Reserved. designed by nyoxge.</p>
+          </address>
+        </div>
+        <nav class="f_menu">
+          <ul>
+            <li><a href="#">1:1 문의</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">이벤트</a></li>
+            <li><a href="#">공지사항</a></li>
+          </ul>
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">매장안내</a></li>
+            <li><a href="#">단체구매</a></li>
+          </ul> 
+        </nav>
+        <div class="f_form">
+          <h3>지오다노의 소식을 구독해보세요.</h3>
+          <div class="f_sub">
+            <input type="text" id="f_email" placeholder="Your email here">
+            <input type="submit" value="구독하기" id ="f_submit">
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
