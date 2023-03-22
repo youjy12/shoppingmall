@@ -101,7 +101,7 @@
 /* new arrival 서식 */
 #new{
   margin:0 auto;
-  padding: 100px 0px;
+  padding-top: 150px;
   width: 1400px;
 }
 #new >h3{
@@ -161,6 +161,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
+  padding: 150px 0px;
 }
 #event > .e_txt{
   width: 500px;
@@ -213,4 +214,61 @@
 }
 #event .e_txt a:hover{
   background: #F5F5F5;
+}
+
+/* sns 서식 영역 */
+#sns{
+  width: 100%;
+  height: 550px;
+  background: #ddd;
+}
+.sns_wrap{
+  width: 1400px;
+  height: 550px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sns_wrap .sns_ctrl{
+  width: 100px;
+}
+
+.sns_img{
+  width: 1000px;
+  height: 420px;
+  overflow: hidden;
+}
+.sns_img > ul{
+  display: flex;
+}
+.sns_img li{
+  position:relative;
+}
+.sns_img .sns_title{
+  position: absolute;
+  top: 34%; left: 39%;
+  color: var(--t-color01);
+  text-align: center;
+}
+.sns_title >h2{
+  font-size: 36px;
+}
+.sns_title > p{
+  font-size: 20px;
+  padding-top: 55px;
+}
+.sns_txt{
+  width: 300px;
+  text-align: center;
+}
+.sns_txt > a> h2{
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+.sns_txt >a >p{
+  font-weight: 600;
+}
+.sns_txt .fa-instagram{
+  font-weight: bold;
 }
